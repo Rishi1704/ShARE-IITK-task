@@ -1,0 +1,352 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #00c984;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.7; */
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 0px 100px;
+}
+
+#logo img {
+    height: auto;
+    width: 160px;
+    filter: brightness(50%);
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    margin: 0px 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: rgb(124, 124, 124);
+    box-shadow: 3px 3px 4px black;
+}
+
+/* Navigation Bar: Join Us blox */
+#joinUs{
+    margin: 0px 50px;
+    padding: 10px 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    border: 3px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#joinUs:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 3px 4px grey;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+}
+
+#home::before {
+    content: "";
+    background: url(background/bg.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#home h1 {
+    align-self: flex-end;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight: 550;
+    color: #006540;
+}
+
+#home p {
+    align-self: flex-end;
+    font-size: 1.8rem;
+    font-family: 'Exo 2', sans-serif;
+    color: black;
+    font-weight: 900;
+    color: #006540;
+}
+
+/* About US section */
+#aboutUs {
+    display: flex;
+    padding: 3px 275px;
+    margin-bottom: 50px;
+}
+
+#aboutUs h1 {
+    padding: 15px 10px;
+    font-family: 'Orbitron', sans-serif;
+    color: #474747;
+}
+
+#aboutUs hr {
+    width: 40%;
+    border: 2px outset red;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px grey;
+}
+
+#aboutUs p {
+    padding: 15px 10px;
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #474747;
+}
+
+/* Programs Section */
+#pillars {
+    position: relative;
+}
+
+#pillars::before {
+    content: "";
+    position: absolute;
+    background: grey;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#pillars h1 {
+    padding: 25px 0px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#pillar-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 34px;
+    padding-bottom: 40px;
+}
+
+.sub-event-details{
+    display: flex;
+    margin: 0px 34px;
+    padding-bottom: 40px;
+}
+
+.sub-event-details .pillars {
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 20px 30px;
+    margin: 30px 20px;
+}
+
+.pillars h2 {
+    padding: 30px 0px;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+}
+
+.pillars p {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+#leadership hr {
+    width: 350px;
+    border: 3px outset red;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#corporate-skills hr {
+    width: 500px;
+    border: 3px outset red;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#openness-to-the-world hr {
+    width: 350px;
+    border: 3px outset red;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#do-well-do-good hr {
+    width: 500px;
+    border: 3px outset red;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* Contact Us section */
+#contactUs {
+    position: relative;
+    color: white;
+}
+
+#contactUs::before {
+    content: "";
+    background: url(background/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contactUs h1 {
+    font-family: 'Cormorant SC', serif;
+}
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+#contact-details div{
+    margin: 20px;
+}
+
+#contact-details img{
+    width: 100px;
+    border-radius: 60px;
+}
+
+#contact-details .vl{
+    border-left: 2px solid white;
+    height: 100px;
+    margin: 0;
+}
+
+#contact-details ul li{
+    list-style: none;
+    padding: 5px 25px;
+    font-size: 1.1rem;
+}
+
+/* Social Media Handles Section */
+#social-handles {
+    position: relative;
+    color: white;
+    height: 150px;
+}
+
+#social-handles::before {
+    content: "";
+    background: #1acd92;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#social-handles h3{
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    font-family: 'Cormorant SC', serif;
+}
+
+#contact-socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-socialMedia img {
+    height: 40px;
+    padding: 10px 15px;
+}
+
+#contact-socialMedia img:hover {
+    filter: brightness(50%);
+}
+
+/* Footer  */
+#copyright {
+    position: relative;
+    color: white;
+}
+
+#copyright::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+/* Utility Classes */
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 4.8rem;
+}
+
+.h-secondary {
+    font-size: 2.5rem;
+}
+
+.h-tertiary {
+    font-size: 1.8rem;
+}
